@@ -25,8 +25,6 @@ void choose_mysteries() {
   cout << "2 - Mistérios dolorosos (terça-feira e sexta-feira)\n";
   cout << "3 - Mistérios gloriosos (quarta-feira e domingo)\n";
   cin >> choice;
-
-  
 }
 
 
@@ -78,9 +76,11 @@ vector<prayer> choose_prayer() {
 
 void pray(vector<prayer> rosary = choose_prayer()) {
   for (const auto& o : rosary) {
-    clean_terminal();
-    cout << "---------------" <<  o.quantity << "x---------------\n" << o.text << endl;
-    sleep_for(seconds(o.duration));
+    for(int i = 0; i < o.quantity; i++) {
+      clean_terminal();
+      cout << "---------------" <<  i + 1 << "x---------------\n" << o.text << endl;
+      sleep_for(seconds(o.duration));
+    }
   }
 }
 
