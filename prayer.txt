@@ -1,7 +1,6 @@
-teste
-teste
-teste|5|1
+Creio em Deus Pai...|1|5
 ---
-teste2
-teste2
-teste2|5|1
+Pai nosso que estais nos céus|1|5
+---
+Ave Maria cheia de graça|3|5
+---
